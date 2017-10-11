@@ -1,10 +1,13 @@
 <!doctype html>
 <html>
 	<head>
+		<title>Cape Town Spatial - social housing and race</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Lora|Mukta" rel="stylesheet"> 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
   crossorigin=""/>
+<script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
   crossorigin=""></script>
@@ -259,7 +262,7 @@
 			</div>
 			<div id="control">
 				<div id="legend">
-					<p class="full">Each dot represents 25 households, colour coded by self-identified race (2011 census).</p>
+					<p class="full">Each dot represents 10 people at maximum zoom, colour coded by self-identified race (2011 census).</p>
 					<div class="legend-circs">
 						<div><span class="circ white"> </span><span>White</span></div>
 						<div><span class="circ coloured"> </span><span>Coloured</span></div>
@@ -294,7 +297,7 @@
 			<div>
 				<h1>The City of Cape Town's Social Housing Plan</h1>
 				<p>This map shows the racial distribution of Cape Town
-				suburbs. Each dot represents 25 housing units. Purple dots are 'white', yellow are 'coloured', green are 'black africa' and red are 'indian' (2011 self-identified census data).</p>
+				suburbs. At maximum zoom, each dot represents 10 people. Purple dots are 'white', yellow are 'coloured', green are 'black africa' and red are 'indian' (2011 self-identified census data).</p>
 				<p>If you wanted to maintain "the spatial legacy of apartheid", where would you locate social housing initiatives?</p>
 				<p>Use the checkboxes to see where the city has placed these initiatives.</p>
 				<div id="letsgo">Got it</div>
@@ -429,6 +432,15 @@ document.addEventListener('DOMContentLoaded', function() {
 		// "the Tafelberg site in Sea Point that would be available for housing development is just 1.1- hectares in size. According to our assessment of the financial modelling, it does not adequately meet the criteria necessary for sustainable affordability. (Helen Zille)",
 	];
 
+
+	// var saltriver = omnivore.kml('199041017.kml');
+	// saltriver.addTo(map);
+	// var woodstock = omnivore.kml('199041018.kml');
+	// woodstock.addTo(map);
+
+	// omnivore.kml('199041019.kml').addTo(map);
+	// omnivore.kml('199041020.kml').addTo(map);
+	// omnivore.kml('199041032.kml').addTo(map);
 
 });
    	</script>			
